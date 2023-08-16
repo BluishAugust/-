@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1 = 0, num2 = 0;
+    int print = 0, total = 0;
+    
+    printf("파보나치수열 출력횟수 입력 : ");
+    scanf("%d", &print);
+    
+    for( ; print >= 0; print--)
+    {
+        total = num1+num2;
+        
+        printf("%d ", total);
+        num2 = total;
+        // num1 = num2;
+        if(num1 == 0)
+            num1++;
+    }
+    
+    return 0;
+}
